@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
+
 <body>
     
+    <div class="container">
+        <form class="form" id="form">
+            
+            <input type="text" name="name" placeholder="Employee Name" required autocomplete="off"><br>
+            <input type="email" name="email" placeholder="Employee Email" required autocomplete="off"><br>
+            <input type="number" name="salary" placeholder="Employee Salary" required autocomplete="off"><br>
+            <input type="text" name="companyName" placeholder="Company Name" autocomplete="off"><br>
+            <select name="role" placeholder= "Role" required autocomplete="off">
+                <option value="QA">QA</option>
+                <option value="SDE">SDE</option>
+                <option value="projectAnalyst">Project Analyst</option>
+            </select><br>
+            <button type="submit">Create Employee</button>
+        </form>
+        <div>
+            <table class="table" id="eTable">
+                <thead>
+                    <tr>
+                        <th>Employee Id</th>
+                        <th>Employee name</th>
+                        <th>Email</th>
+                        <th>Salary</th>
+                        <th>Company Name</th>
+                        <th>Role</th>
+                        <th>Others</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table rows will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
